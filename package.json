@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "dev:socket": "node --loader ts-node/esm --trace-warnings --no-warnings server.mts",
     "build": "next build --turbopack",
+    "build:socket": "next build && tsc --project tsconfig.server.json",
     "start": "next start",
+    "start:socket": "cross-env NODE_ENV=production node dist/server.mjs",
     "lint": "eslint"
   },
   "dependencies": {
