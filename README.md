@@ -1,4 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat Socket
+
+
+
+A real-time chat application built with Node.js, TypeScript, and WebSockets. This project provides a robust backend for instant messaging applications.
+
+## Description
+
+Chat Socket is a high-performance, scalable chat server that allows users to connect and communicate in real-time. It's built with modern technologies and best practices, including a clean, typed codebase with TypeScript and a solid project structure.
+
+## Features
+
+*   **Real-time Messaging**: Instant message delivery using WebSockets.
+*   **Multiple Rooms**: Support for public and private chat rooms.
+*   **User Authentication**: Secure authentication to manage user sessions.
+*   **Scalable Architecture**: Designed to handle a large number of concurrent connections.
+*   **Typed Codebase**: Written in TypeScript for better maintainability and fewer bugs.
+
+## Technologies Used
+
+*   **Backend**: [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)
+*   **Real-time Communication**: [Socket.IO](https://socket.io/)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Linting**: [ESLint](https://eslint.org/) with `eslint-plugin-import`
+*   **Path-mapping**: tsconfig-paths for clean import paths.
+
+## Prerequisites
+
+Make sure you have the following installed on your system:
+*   Node.js (v18.x or newer recommended)
+*   npm or Yarn
+
+## Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/your-username/chat_socket.git
+    cd chat_socket
+    ```
+
+2.  **Install dependencies:**
+    Using npm:
+    ```sh
+    npm install
+    ```
+    Or using Yarn:
+    ```sh
+    yarn install
+    ```
+
+3.  **Set up environment variables:**
+    Create a `.env` file in the root of the project and add the necessary environment variables. You can use the `.env.example` file as a template:
+    ```sh
+    cp .env.example .env
+    ```
+    Now, edit the `.env` file with your configuration (e.g., `PORT`, database connection string, secret keys).
+
+
+### Development
+
+To run the server in development mode with hot-reloading:
+
+```sh
+npm run dev
+
 
 ## Getting Started
 
